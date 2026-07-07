@@ -92,7 +92,7 @@ module.exports.checkOutOrder = async (req, res) => {
 
     // Redirect or display the checkout link to your customer
     const { checkoutLink, orderReference } = data;
-    db.storeOrder(orderReference, uniqueID)
+    db.storeOrder(uniqueID,orderReference, )
     res.json({ url: checkoutLink, statusCode: 200 })
 }
 
