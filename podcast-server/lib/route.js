@@ -77,7 +77,7 @@ module.exports.checkOutOrder = async (req, res) => {
         },
         body: JSON.stringify({
             order: {
-                amount: `${1000 * 100.0}`,
+                amount: `1000.0`,
                 currency: 'NGN',
                 callbackUrl: process.env.WEB_HOOK_URL,
                 customerId: uniqueID
