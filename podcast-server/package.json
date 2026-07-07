@@ -1,0 +1,20 @@
+{
+  "name": "podcast-server",
+  "version": "1.0.0",
+  "description": "Backend service for PodCast App",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "Podcast"
+  ],
+  "author": "yahya said",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^2.3.0",
+    "express": "^5.2.1",
+    "node-schedule": "^2.1.1",
+    "uuid": "^14.0.1"
+  }
+}
