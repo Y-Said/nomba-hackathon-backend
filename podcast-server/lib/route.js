@@ -99,7 +99,7 @@ module.exports.checkOutOrder = async (req, res) => {
 
 module.exports.getTodayPodcast = (req, res) => {
     let body = req.body.toString();
-    let data = JSON.stringify(body)
+    let data = JSON.parse(body)
     let result = db.getTodayPodcast(data.uniqueID);
     result["billingState"] = db.checkUserBilling(data.uniqueID);
     res.json(result)
